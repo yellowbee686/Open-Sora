@@ -18,7 +18,7 @@ vae = dict(
 )
 text_encoder = dict(
     type="t5",
-    from_pretrained="DeepFloyd/t5-v1_1-xxl",
+    from_pretrained="DeepFloyd/",
     model_max_length=120,
 )
 scheduler = dict(
