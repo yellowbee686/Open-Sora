@@ -18,13 +18,14 @@ vae = dict(
 )
 text_encoder = dict(
     type="t5",
-    from_pretrained="./pretrained_models/t5_ckpts",
+    from_pretrained="DeepFloyd/t5-v1_1-xxl",
     model_max_length=120,
 )
 scheduler = dict(
     type="iddpm",
     num_sampling_steps=100,
     cfg_scale=7.0,
+    cfg_channel=3, # or None
 )
 dtype = "fp16"
 
